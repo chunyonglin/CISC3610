@@ -2,7 +2,7 @@
 ## My Porfolio Page
 
 ### Lab:
-[Hello Word](CISC3610/HELLE WORLD
+[Hello Word](CISC3610/HELLEWORLD.html)
 
 
 ### Project:
