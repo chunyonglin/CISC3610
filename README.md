@@ -2,7 +2,7 @@
 ## My Porfolio Page
 
 ### Lab:
-1. [Hello Word](CISC3610/index.html)
+1. google.com
 
 
 
