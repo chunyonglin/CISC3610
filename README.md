@@ -2,7 +2,7 @@
 ## My Porfolio Page
 
 ### Lab:
-1. [Cartoon](chunyonglin.github.io/cartoon.html)
+1. [Cartoon](http://chunyonglin.github.io/cartoon.html)
 
 
 
