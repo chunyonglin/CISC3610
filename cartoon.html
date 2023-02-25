@@ -9,6 +9,10 @@
   </style>
 </head>
 <body>
+  <h1>Charater</h1>
+  <h3><a href="https://chunyonglin.github.io/">Back to my portfolio page</a></h3>
+  <hr/>
+  <br/>
   <canvas id="cartoon" width="800" height="600"></canvas>
   <script>
     const canvas = document.getElementById("cartoon");
@@ -67,16 +71,16 @@
     context.stroke();
  
     //draw grassGround
-    context.save();
-   context.beginPath();
+     context.save();
+     context.beginPath();
      context.moveTo(0,400);
-    context.bezierCurveTo(200,300,500,500,800,450);
-    context.lineTo(800,600);
+     context.bezierCurveTo(200,300,500,500,800,450);
+     context.lineTo(800,600);
      context.lineTo(0,800);
-    context.closePath();
+     context.closePath();
      context.fillStyle = "DarkGreen";
-    context.fill();
-    context.restore(); 
+     context.fill();
+     context.restore(); 
  
 // Draw the moon
     context.beginPath();
