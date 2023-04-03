@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Labs</title>
+</head>
+<body>
+
+<div id="gameArea">
+        <h3>1.Enter Name</h3>
+        <label>Enter your name: </label>
+        <input type = "text" id = "txtName" oninput="textcontent()"><br><br>
+        
+        <h3>2. Select a background color </h3> 
+        <label>Click the box select a color for background:</label>
+        <input type="color" id="bgcolorpicker" oninput="bgclr()"><br><br>
+
+        <h3>3. Select a text color </h3> 
+        <label>Click the box select a color for text:</label>
+        <input type="color" id="textcolorpicker" oninput="fontcolor()"><br><br>
+
+        <h3>4. Set the size of the text </h3>
+       <label>Use the slider to set the size of the text:</label>
+       <input type="range" id="size" min="12" max="48" oninput="fontsize()" value="12"
+ /><output class="size-output" for="size"></output><br><br>
+ 
+       <h3>5. Select a font </h3> 
+       <label>Select a font to display the text: </label><br>
+       <input type="radio" id="Arial" name="font_type" value="Arial" oninput="fontType(this)">
+       <label>Arial</label><br>
+       <input type="radio" id="Times New Roman" name="font_type" value="Times New Roman" oninput="fontType(this)">
+      <label>Times New Roman</label><br>
+      <input type="radio" id="Brush Script MT" name="font_type" value="Brush Script MT" oninput="fontType(this)">
+      <label>Brush Script MT</label><br><br><br>
+     
+      <!-- Reset button -->
+      <input type="button" onclick="resetOutput()" value="Reset">
+       <br><br>
+
+        <!-- Output to show the result -->
+        <label>Output:</label>
+        <output id="txtOutput" style="padding: 15px; margin: 10px; font-size: 12px; border: 2px solid Black; background: White; color:Black;" value="" />
+          </div>
+        </form>
+<script>
+ const txtOutput = document.getElementById("txtOutput");
+        //function for displaying name
+         function textcontent(){
+                var txtName = document.getElementById("txtName");      
+                var name = txtName.value;
+                txtOutput.value = name;               
+        }
+
+        //function for changing background color
+        function bgclr() {
+               var bgcolor=document.getElementById('bgcolorpicker');
+               txtOutput.style.backgroundColor = bgcolor.value;
+        }
+  
+
+         //Function for changing text color
+             function fontcolor(){
+              var textcolor=document.getElementById('textcolorpicker');
+                    txtOutput.style.color = textcolor.value;
+                };
+ 
+          //function for displaying font size number
+         const size = document.querySelector("#size"); 
+         const sizedisplay = document.querySelector(".size-output");
+         sizedisplay.textContent = size.value;
+         size.addEventListener("input", () => {
+                sizedisplay.textContent = size.value;
+         });
+         //function for changing font size
+         function fontsize(){
+                var slider = document.getElementById("size");
+                txtOutput.style.fontSize = slider.value+ "px";
+        }
+        
+        //function for changing font type
+        function fontType(element){
+                txtOutput.style.fontFamily = element.value;
+        }
+        
+        //function for resetting the page to their default values
+       function resetOutput() { 
+           txtOutput.value="";
+           txtOutput.style.backgroundColor ="White";
+           txtOutput.style.fontSize="12px";
+           txtOutput.style.color="Black";
+        
+           //input  value go back to empty
+           var txtName = document.getElementById("txtName"); 
+           txtName.value="";
+        
+           //Background colorpicker go back to black
+           var bgcolor=document.getElementById('bgcolorpicker');
+           bgcolor.value="Black";
+        
+           //Font colorpicker go back to black
+           var textcolor=document.getElementById('textcolorpicker');
+            textcolor.value="Black";
+        
+           //the slider go back to default value 12
+           var slider_default = "12";
+           size.value=slider_default;
+           sizedisplay.textContent =size.value;
+               
+           //uncheck the radio buttons
+           document.getElementById("Arial").checked = false;
+           document.getElementById("Times New Roman").checked = false;
+           document.getElementById("Brush Script MT").checked = false;
+       }
+ </script>
+</body>
+</html>
+ 
