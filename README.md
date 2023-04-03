@@ -2,8 +2,7 @@
 ## My Porfolio Page
 
 ### Lab:
-1. [Cartoon](http://chunyonglin.github.io/cartoon.html)
-2. [Animation](http://chunyonglin.github.io/animation.html)
+
 
 
 
@@ -11,3 +10,5 @@
 
 _______________________________________________
 ### Project:
+1. [Cartoon](http://chunyonglin.github.io/cartoon.html)
+2. [Animation](http://chunyonglin.github.io/animation.html)
