@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Visualiztion</title>
+</head>
+<body>
+      <h1> Chunyong Lin-Data Visualiztion</h1>
+          <h2><a href="https://chunyonglin.github.io/">My Portfolio Page</a></h2>
+          <br>
+          <hr/>
+<div style="width:60%;position: absolute">
+  <h3>Bar Chart</h3>
+     <canvas id="bar-chart" width="800" height="450"></canvas>
+  <br> <br> <br> <br> <br>
+  <h3>Pie Chart</h3>
+     <canvas id="pie-chart" width="800" height="450"></canvas>
+</div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["Play phone", "SelfStudy", "Work", "homework","Sleep"],
+      datasets: [
+        {
+          label: "Time Spent Per Week(hours)",
+          backgroundColor: ["blue", "lightpink","violet","lightgreen","orange"],
+          data: [43,54,8,4,42]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Chunyong Lin'
+      }
+    }
+});
+
+// Pie Chart
+new Chart(document.getElementById("pie-chart"), {
+    type: 'pie',
+    data: {
+      labels: ["Play phone", "SelfStudy", "Work", "homework","Sleep"],
+      datasets: [{
+        label: "Time Spent Per Week(hours)",
+        backgroundColor: ["blue", "lightpink","violet","lightgreen","orange"],
+        data: [43,54,8,4,42]
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Chunyong Lin'
+      }
+    }
+});
+
+</script>
+</body>
+</html>
