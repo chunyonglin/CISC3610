@@ -4,6 +4,7 @@
 ### Lab:
 1. [Fruit](http://chunyonglin.github.io/fruit.html)
 2. [Audio](http://chunyonglin.github.io/audio.html)
+3. [Resume](http://chunyonglin.github.io/resume.html)
 
 
 
