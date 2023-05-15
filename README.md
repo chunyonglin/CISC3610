@@ -16,4 +16,5 @@ _______________________________________________
 2. [Animation](http://chunyonglin.github.io/animation.html)
 3. [Form](http://chunyonglin.github.io/text.html)
 4. [DataVisualiztion](http://chunyonglin.github.io/DataVisualization.html)
-5. [WickProject](http://chunyonglin.github.io/Bikini.html)
+5. [Video Animation](http://chunyonglin.github.io/VideoAnimation.html)
+6. [WickProject](http://chunyonglin.github.io/Bikini.html)
